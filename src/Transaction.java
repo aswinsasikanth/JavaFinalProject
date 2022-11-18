@@ -29,7 +29,8 @@ public class Transaction {
         date = new Date();
         operation();
     }
-
+//findMaxID
+    //findDisplay
     public void storeTransferAccount(long transferAccount) {
         this.transferAccountNum = transferAccount;
     }
@@ -99,7 +100,7 @@ public class Transaction {
             return;
         }
     }
-
+//To check the account existence ****NOT WORKING AS EXPECTED****
     public double checkIfAccountExists(long accountNum) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("MyFile.txt"));
@@ -221,7 +222,7 @@ public class Transaction {
         }
         return 0;
     }
-
+//Display the accpunt detials when asked
     private void findDisplay() {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("MyFile.txt"));

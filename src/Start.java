@@ -13,25 +13,23 @@ public class Start {
         Scanner input = new Scanner(System.in);
         char mainYesOrNo = 'Y';
         while (mainYesOrNo =='Y'){
-            System.out.print("\t=========================================\n");
-            System.out.print(SET_BOLD_TEXT +"\t \tWELCOME TO BANK MANAGEMENT SYSTEM \n");
+            System.out.print(SET_BOLD_TEXT +" PRIMITIVE BANK SYSTEM\n");
             if(count<1){
                 count=count+1;
             }else{
-                System.out.print("\t\t Again \n");
+                System.out.print(" Again \n");
             }
-            System.out.print("\t=========================================\n\n");
             if(count<2){
                 count=count+1;
             }else{
-                System.out.print("\t\t1 : Start Again\n\n");
-                System.out.print("\t\t2 : Exit\n\n");
-                System.out.println("\tYou Select : ");
+                System.out.print("1 : Start Again\n\n");
+                System.out.print("2 : Exit\n\n");
+                System.out.println("You Select : ");
             }
             //start the operation
             start();
 
-            System.out.println("\n\tDo u want to run your Program Again \n\t\t\tY = yes\n\t\t\tN = No\n");
+            System.out.println("\nDo u want to run your Program Again \nY = yes\nN = No\n");
             System.out.println("You Select : ");
             mainYesOrNo =(input.next()).charAt(0);
             if(Character.isLowerCase(mainYesOrNo )){
@@ -48,19 +46,19 @@ public class Start {
         long accountNo=0;
         long transferAccountNo=0;
         do {
-            System.out.print("\tQ: Choose any one of the operation to perform\n\n");
-            System.out.print("\t1 : Transaction\n\n");
-            System.out.print("\t2 : View Existing Account Information\n\n");
-            System.out.print("\t3 : Pay Utility Bills\n\n");
-            System.out.print("\tq : Exit\n\n");
+            System.out.print("Q: Choose any one of the operation to perform\n\n");
+            System.out.print("1 : Transaction\n\n");
+            System.out.print("2 : View Existing Account Information\n\n");
+            System.out.print("3 : Pay Utility Bills\n\n");
+            System.out.print("q : Exit\n\n");
             System.out.println("Your choice: ");
             choice = sc.next();
             switch (choice) {
                 case "1":
-                    System.out.print("\tQ: What do you want to do for Transaction?\n\n");
-                    System.out.print("\t\ta : Deposit\n\n");
-                    System.out.print("\t\tb : Withdraw\n\n");
-                    System.out.print("\t\tc : Transfer\n\n");
+                    System.out.print("Q: What do you want to do for Transaction?\n\n");
+                    System.out.print("a : Deposit\n\n");
+                    System.out.print("b : Withdraw\n\n");
+                    System.out.print("c : Transfer\n\n");
                     ch = sc.next();
                     if (ch.equalsIgnoreCase("a"))
                         operation = "Deposit";
@@ -112,10 +110,10 @@ public class Start {
         long accountNo=0;
         long transferAccountNo=0;
         do {
-            System.out.print("\t======== What do you want to do? ========\n\n");
-            System.out.print("\t========= 1 : Open New account ==========\n\n");
-            System.out.print("\t===== 2 : Do you have existing account? ====\n\n");
-            System.out.print("\t============ q : Exit ============\n\n");
+            System.out.print("======== What do you want to do? ========\n\n");
+            System.out.print("========= 1 : Open New account ==========\n\n");
+            System.out.print("===== 2 : Do you have existing account? ====\n\n");
+            System.out.print("============ q : Exit ============\n\n");
             System.out.println("Your choice: ");
             choice = sc.next();
             switch (choice) {
@@ -141,11 +139,11 @@ public class Start {
         sc.close();
     }
     public static void error() {
-        System.out.print("\t\t *****************************\n");
-        System.out.print("\t\t You Select some thing wrong\n");
-        System.out.print("\t\t OR\n");
-        System.out.print("\t\t There may be some other Problem\n");
-        System.out.print("\t\t It is better for you to try again...!\n");
-        System.out.print("\t\t *****************************\n\n");
+        System.out.print(" *****************************\n");
+        System.out.print(" You Select some thing wrong\n");
+        System.out.print(" OR\n");
+        System.out.print(" There may be some other Problem\n");
+        System.out.print(" It is better for you to try again...!\n");
+        System.out.print(" *****************************\n\n");
     }
 }
