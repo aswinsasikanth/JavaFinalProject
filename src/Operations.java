@@ -1,10 +1,7 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Start {
+public class Operations {
     int count=0;
     List<String> FileRecords;
     public static final String SET_BOLD_TEXT = "\033[0;1m";
